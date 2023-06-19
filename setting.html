@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>목표등록</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/basic.css" />
+    <script src="js/prefixfree.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/Calendar.js"></script>
+    <script defer src="js/endMain.js"></script>
+  </head>
+  <body>
+    <main id="setting">
+      <div class="setting_bg">
+        <form class="setting_input_wrap">
+          <div class="setting_title">
+            <h2>목표설정</h2>
+            <input type="text" />
+          </div>
+          <div class="setting_calendar">
+            <h2>목표기간</h2>
+            <div class="calender_selector_wrap">
+              <div class="calender_selector selector_before">
+                <span class="year blank"></span>
+                <span class="month blank"></span>
+                <span class="day"></span>
+                <!-- <span class="downform">
+                  <img src="./img/downform.svg" alt="downform" />
+                </span> -->
+              </div>
+              <div class="calender_selector selector_after">
+                <span class="year blank"></span>
+                <span class="month blank"></span>
+                <span class="day"></span>
+                <span class="downform">
+                  <img src="./img/downform.svg" alt="downform" />
+                </span>
+              </div>
+            </div>
+            <div class="calender_option_wrap">
+              <!-- <div class="calender_option option_before">
+                <div class="year">
+                  <img class="leftBtn" src="./img/leftBtn.png" alt="leftBtn" />
+                  <input
+                    type="number"
+                    placeholder="2023"
+                    value="2023"
+                    min="2023"
+                  />
+                  <span>년</span>
+                  <img
+                    class="rightBtn"
+                    src="./img/rightBtn.png"
+                    alt="rightBtn"
+                  />
+                </div>
+                <div class="month">
+                  <img class="leftBtn" src="./img/leftBtn.png" alt="leftBtn" />
+                  <input type="number" placeholder="6" value="6" min="1" />
+                  <span>월</span>
+                  <img
+                    class="rightBtn"
+                    src="./img/rightBtn.png"
+                    alt="rightBtn"
+                  />
+                </div>
+                <div class="day">
+                  <img class="leftBtn" src="./img/leftBtn.png" alt="leftBtn" />
+                  <input type="number" placeholder="12" value="12" min="1" />
+                  <span>일</span>
+                  <img
+                    class="rightBtn"
+                    src="./img/rightBtn.png"
+                    alt="rightBtn"
+                  />
+                </div>
+              </div> -->
+              <div class="calender_option option_after">
+                <div class="year">
+                  <img class="leftBtn" src="./img/leftBtn.png" alt="leftBtn" />
+                  <input type="text" readonly value="" />
+                  <span>년</span>
+                  <img
+                    class="rightBtn"
+                    src="./img/rightBtn.png"
+                    alt="rightBtn"
+                  />
+                </div>
+                <div class="month">
+                  <img class="leftBtn" src="./img/leftBtn.png" alt="leftBtn" />
+                  <input type="text" readonly value="" />
+                  <span>월</span>
+                  <img
+                    class="rightBtn"
+                    src="./img/rightBtn.png"
+                    alt="rightBtn"
+                  />
+                </div>
+                <div class="day">
+                  <img class="leftBtn" src="./img/leftBtn.png" alt="leftBtn" />
+                  <input type="text" readonly placeholder="12" value="" />
+                  <span>일</span>
+                  <img
+                    class="rightBtn"
+                    src="./img/rightBtn.png"
+                    alt="rightBtn"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="album_img">
+            <img src="./img/test_img/search.jpg" alt="search" />
+          </div>
+          <div class="img_change_button">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+          <div class="todoList">
+            <button class="everyTodo">
+              <a href="everyTodo.html">매일할일</a><span>0</span>
+            </button>
+            <button class="choiceTodo">그날할일<span>0</span></button>
+          </div>
+        </form>
+        <div class="btns">
+          <button class="whiteBtn clearBtn">
+            <a href="./DdayList.html">등록</a>
+          </button>
+          <button class="blackBtn">앨범</button>
+        </div>
+        <div class="goBack">
+          <img src="img/backBtn.png" alt="goBack" />
+        </div>
+        <div class="dateControl white_bg">
+          <button class="leftControlBtn">
+            <img src="./img/leftControlBtn.png" alt="leftControlBtn" />
+          </button>
+          <div>
+            <span class="year">2023</span>-<span class="month">06</span>-<span
+              class="day"
+              >18</span
+            >
+          </div>
+          <button class="rightControlBtn">
+            <img src="./img/rightControlBtn.png" alt="rightControlBtn" />
+          </button>
+        </div>
+        <div class="dateOnBtn">
+          <img src="img/dateOnBtn.png" alt="dateOnBtn" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

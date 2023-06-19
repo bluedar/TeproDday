@@ -1,0 +1,240 @@
+#everyTodo {
+  .setting_bg {
+    border: 1px solid #ccc;
+    .setting_wrap {
+      padding: 60px 20px 0;
+      .setting_calendar {
+        h2 {
+          margin: 20px;
+        }
+        .calender_selector_wrap {
+          display: flex;
+          justify-content: space-between;
+          .calender_selector {
+            width: 150px;
+            height: 45px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            line-height: 45px;
+            padding-left: 10px;
+            span {
+              &.blank::after {
+                display: inline-block;
+                content: " -";
+                padding-left: 4px;
+              }
+              &.downform {
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+        .calender_option_wrap {
+          display: flex;
+          justify-content: right;
+          position: relative;
+          .calender_option {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: 150px;
+            height: 160px;
+            border: 1px solid #ccc;
+            background: #fff;
+            border-radius: 6px;
+            line-height: 45px;
+            padding: 5px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &.on {
+              display: flex;
+            }
+            & > div {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              input {
+                width: 40px;
+                text-align: right;
+              }
+              img {
+                width: 16px;
+                height: 20px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .everydayList {
+        margin: 20px auto 0;
+        width: 330px;
+        height: 310px;
+        //background: #06102f;
+        background: url("../img/moonlight.jpg") center center/cover no-repeat;
+        border-radius: 10px;
+        position: relative;
+        .DdayList_wrap {
+          width: 100%;
+          height: 310px;
+
+          position: absolute;
+          top: 0px;
+          overflow: hidden;
+          ul {
+            width: calc(100% + 17px);
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            padding: 20px 0;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+            padding-right: 17px;
+            li {
+              position: relative;
+              &.off {
+                display: none;
+              }
+              button {
+                @include Transparent-btn($whiteBtn-color, 270px, 50px);
+                padding: 10px 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+              }
+              img {
+                position: absolute;
+                top: -10px;
+                right: -5px;
+              }
+            }
+          }
+          .dark {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            width: 100vw;
+            height: 100vh;
+            z-index: 300;
+            display: none;
+            &.on {
+              display: block;
+            }
+          }
+          .todoList_form {
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 500;
+            text-align: center;
+            display: none;
+            &.on {
+              display: block;
+            }
+            color: #fff;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+            h3 {
+              font-size: 24px;
+              margin: 40px 20px 10px;
+            }
+            p {
+              margin: 10px 30px;
+              height: 150px;
+              text-align: left;
+              border: 1px solid rgba(255, 255, 255, 0.5);
+              border-radius: 6px;
+            }
+            .form_btns {
+              column-gap: 20px;
+              display: flex;
+              justify-content: center;
+              button {
+                @include Transparent-btn($blackBtn-color, auto, auto);
+                padding: 10px 30px;
+              }
+            }
+          }
+        }
+      }
+      .addListBtn {
+        margin-top: 30px;
+        text-align: center;
+        button {
+          @include Transparent-btn(#fff, 310px, 50px);
+          border: 1px solid #ccc;
+          color: #aaa;
+          &:hover {
+            background: #ccc;
+          }
+        }
+      }
+    }
+    .setting_add_bg {
+      .setting_add_wrap {
+        padding: 60px 20px 0;
+        h2 {
+          margin: 20px;
+        }
+        .userTitle {
+          width: 300px;
+          height: 40px;
+          margin: auto;
+          background: #ccc;
+          input {
+            line-height: 40px;
+            font-size: 24px;
+            text-indent: 20px;
+          }
+        }
+        .userparagraph {
+          width: 300px;
+          min-height: 260px;
+          max-height: 300px;
+          margin: auto;
+          background: #ccc;
+          padding: 20px;
+          overflow-y: auto;
+          .textarea {
+            min-height: 260px;
+            font-size: 20px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+    .btns {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      column-gap: 20px;
+      justify-content: center;
+
+      .whiteBtn {
+        @include Transparent-btn(#ccc, 230px, 60px);
+        box-shadow: 2px 2px 2px 3px #aaa;
+        border: none;
+        &:hover {
+          box-shadow: none;
+        }
+      }
+      .blackBtn {
+        @include Transparent-btn($blackBtn-color, 270px, 50px);
+      }
+    }
+  }
+}

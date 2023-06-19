@@ -1,0 +1,178 @@
+#setting {
+  .setting_bg {
+    position: relative;
+    border: 1px solid gray;
+    .setting_input_wrap {
+      padding: 60px 20px 0;
+      h2 {
+        margin: 20px;
+      }
+      .setting_title {
+        h2 {
+        }
+        input {
+          box-sizing: border-box;
+          display: block;
+          min-width: 320px;
+          width: 100%;
+          height: 60px;
+          font-size: 24px;
+          font-weight: bold;
+          border: 1px solid #d9d9d9;
+          border-radius: 6px;
+          text-indent: 20px;
+          margin: auto;
+        }
+      }
+      .setting_calendar {
+        h2 {
+        }
+        .calender_selector_wrap {
+          display: flex;
+          justify-content: space-between;
+          .calender_selector {
+            width: 150px;
+            height: 45px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            line-height: 45px;
+            padding-left: 10px;
+            span {
+              transition: 0.5s;
+              &.blank::after {
+                display: inline-block;
+                content: " -";
+                padding-left: 4px;
+              }
+              &.downform {
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+        .calender_option_wrap {
+          display: flex;
+          justify-content: right;
+          position: relative;
+          .calender_option {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: 150px;
+            height: 160px;
+            border: 1px solid #ccc;
+            background: #fff;
+            border-radius: 6px;
+            line-height: 45px;
+            padding: 5px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &.on {
+              display: flex;
+            }
+            & > div {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              input {
+                width: 40px;
+                text-align: right;
+              }
+              img {
+                width: 16px;
+                height: 20px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .album_img {
+        max-width: 200px;
+        height: 150px;
+        margin: 30px auto 0;
+        border: 1px solid black;
+        img {
+          padding: 10px;
+          width: 100%;
+          height: 100%;
+          border: 1px solid black;
+          object-fit: cover;
+        }
+      }
+      .img_change_button {
+        max-width: 200px;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px auto;
+        button {
+          padding: 10px 20px;
+          border: 1px solid black;
+          border-radius: 3px;
+        }
+      }
+      .todoList {
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+        max-width: 300px;
+        button {
+          @include Transparent-btn(transparent, 130px, 45px);
+          font-size: 16px;
+          padding: 0 10px;
+          color: #666;
+          font-weight: bold;
+          border: 1px solid #ccc;
+          position: relative;
+          span {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -10px;
+            right: -16px;
+            width: 33px;
+            height: 21px;
+            background: #d9d9d9;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            color: #fff;
+            &.on {
+              background: red;
+              border: 2px solid pink;
+              width: 38px;
+              height: 25px;
+              top: -12px;
+              right: -19px;
+            }
+          }
+          &:hover {
+            color: #000;
+            text-shadow: none;
+            border: 1px solid #aaa;
+            box-shadow: 0 0 1px 1px #aaa;
+          }
+        }
+      }
+    }
+    .btns {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      column-gap: 20px;
+      justify-content: center;
+
+      .whiteBtn {
+        @include Transparent-btn($blackBtn-color, 170px, 50px);
+      }
+      .blackBtn {
+        @include Transparent-btn($blackBtn-color, 170px, 50px);
+      }
+    }
+  }
+}

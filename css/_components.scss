@@ -1,0 +1,38 @@
+//투병버튼 컬러 화이트 & 블랙
+$whiteBtn-color: rgba(255, 255, 255, 0.2);
+$blackBtn-color: rgba(0, 0, 0, 0.2);
+
+//화이트버튼
+//@include Transparent-btn($whiteBtn-color, $max-width, $max-height);
+//블랙버튼
+//@include Transparent-btn($Btn-color, $max-width, $max-height);
+
+// 투명버튼 mixin
+@mixin Transparent-btn($Btn-color, $max-width, $max-height) {
+  background: $Btn-color;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: $max-width;
+  height: $max-height;
+  cursor: pointer;
+  &:hover {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+    border: none;
+    box-shadow: 0 0 5px 3px #fff;
+  }
+  a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@mixin test-border() {
+  border: 1px solid black;
+}

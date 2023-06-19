@@ -1,0 +1,244 @@
+#todoList {
+  .bg {
+    position: relative;
+    h1 {
+      text-align: center;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    .DdayCount {
+      text-align: center;
+      margin-top: 120px;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      color: #fff;
+      font-size: 68px;
+      line-height: 76px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    }
+    h2 {
+      text-align: center;
+      margin-top: 200px;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+    }
+    .todayList_wrap {
+      width: 100%;
+      min-height: 310px;
+      @media (max-height: 680px) {
+        min-height: 280px;
+      }
+      position: absolute;
+      top: 280px;
+      overflow: hidden;
+      .Percentage {
+        width: 310px;
+        height: 35px;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        margin: 0 auto 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+        font-size: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        position: relative;
+        span {
+          z-index: 10;
+        }
+        .Percentage_bg_color {
+          position: absolute;
+          height: 100%;
+          width: 50%;
+          top: 0;
+          left: 0;
+          background: rgba(159, 249, 255, 0.9);
+        }
+        &.on {
+          display: none;
+        }
+      }
+      .completBtns {
+        &.on {
+          display: none;
+        }
+        display: flex;
+        justify-content: space-between;
+        width: 310px;
+        margin: auto;
+        button {
+          @include Transparent-btn($whiteBtn-color, 90px, 50px);
+          font-size: 16px;
+        }
+      }
+      .todoLists {
+        &.on {
+          display: none;
+        }
+        ul {
+          width: calc(100% + 17px);
+          height: 100%;
+          max-height: 250px;
+          @media (max-height: 730px) {
+            max-height: 200px;
+          }
+          @media (max-height: 680px) {
+            max-height: 150px;
+          }
+          padding: 20px 0;
+          overflow-y: scroll;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 10px;
+          padding-right: 17px;
+          li {
+            position: relative;
+            button {
+              @include Transparent-btn($whiteBtn-color, 310px, 50px);
+              padding: 10px 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 16px;
+            }
+          }
+        }
+        .All {
+          &.on {
+            display: none;
+          }
+        }
+        .before {
+          &.on {
+            display: none;
+          }
+        }
+        .after {
+          &.on {
+            display: none;
+          }
+        }
+      }
+      .forms {
+        .dark {
+          position: fixed;
+          top: 0;
+          left: 0;
+          background: rgba(0, 0, 0, 0.2);
+          width: 100vw;
+          height: 100vh;
+          z-index: 300;
+          display: none;
+          &.on {
+            display: block;
+          }
+        }
+        .todoList_form {
+          width: 300px;
+          height: 300px;
+          background: rgba(255, 255, 255, 0.7);
+          border-radius: 20px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 500;
+          text-align: center;
+          display: none;
+          &.on {
+            display: block;
+          }
+          color: #fff;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+          h3 {
+            font-size: 20x;
+            margin: 40px 20px 10px;
+          }
+          p {
+            margin: 10px 30px;
+            height: 150px;
+            text-align: left;
+          }
+          .form_btns {
+            column-gap: 20px;
+            display: flex;
+            justify-content: center;
+            button {
+              @include Transparent-btn($blackBtn-color, auto, auto);
+              padding: 10px 10px;
+              font-size: 18px;
+            }
+          }
+        }
+        .todoList_complet_form {
+          width: 300px;
+          height: 300px;
+          background: rgba(255, 255, 255, 0.7);
+          border-radius: 20px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 500;
+          text-align: center;
+          display: none;
+          &.on {
+            display: block;
+          }
+          color: #fff;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+          h3 {
+            font-size: 24px;
+            margin: 40px 20px 10px;
+          }
+          p {
+            margin: 10px 30px;
+            height: 120px;
+            text-align: left;
+          }
+          div {
+            position: relative;
+            top: -50px;
+            font-size: 46px;
+            font-weight: bold;
+            color: orangered;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+          }
+          .form_btns {
+            column-gap: 20px;
+            display: flex;
+            justify-content: center;
+            button {
+              @include Transparent-btn($blackBtn-color, 250px, auto);
+              padding: 10px 30px;
+            }
+          }
+        }
+      }
+    }
+    .btns {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      column-gap: 20px;
+      justify-content: center;
+
+      .whiteBtn {
+        @include Transparent-btn($whiteBtn-color, 170px, 50px);
+      }
+      .blackBtn {
+        @include Transparent-btn($blackBtn-color, 170px, 50px);
+      }
+    }
+  }
+}

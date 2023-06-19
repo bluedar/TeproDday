@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>투두리스트</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/basic.css" />
+    <script src="js/prefixfree.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/todoList.js"></script>
+    <script defer src="js/endMain.js"></script>
+  </head>
+  <body>
+    <main id="todoList">
+      <div class="bg">
+        <h1><img src="img/D-day.png" alt="TeproD-day" /></h1>
+        <div class="DdayCount">0</div>
+        <h2><img src="img/today-list.png" alt="TeproD-day" /></h2>
+        <div class="todayList_wrap">
+          <div class="Percentage">
+            <div class="Percentage_bg_color"></div>
+            <span>50</span>%
+          </div>
+          <div class="completBtns">
+            <button class="AllBtn">전체목록</button>
+            <button class="beforeBtn">진행목록</button>
+            <button class="afterBtn">완료목록</button>
+          </div>
+          <div class="todoLists">
+            <ul class="All on"></ul>
+            <ul class="before"></ul>
+            <ul class="after on"></ul>
+          </div>
+          <div class="forms">
+            <div class="dark"></div>
+            <div class="todoList_form">
+              <h3>코딩 100줄 작성하기</h3>
+              <p>코딩을 100줄 작성하고 사진을 업로드한다.</p>
+              <div class="form_btns">
+                <button class="close_button">아직미완</button>
+                <button class="ok_button">완료보고</button>
+              </div>
+            </div>
+            <div class="todoList_complet_form">
+              <h3>코딩 100줄 작성하기</h3>
+              <p>코딩을 100줄 작성하고 사진을 업로드한다.</p>
+              <div>완료!</div>
+              <div class="form_btns">
+                <button class="end_btn">닫기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <button class="whiteBtn">
+            <a href="./DdayList.html">목록</a>
+          </button>
+          <button class="blackBtn"><a href="./DdayList.html">삭제</a></button>
+        </div>
+        <div class="goBack">
+          <img src="img/backBtn.png" alt="goBack" />
+        </div>
+        <div class="dateControl">
+          <button class="leftControlBtn">
+            <img src="./img/leftControlBtn.png" alt="leftControlBtn" />
+          </button>
+          <div>
+            <span class="year">2023</span>-<span class="month">06</span>-<span
+              class="day"
+              >18</span
+            >
+          </div>
+          <button class="rightControlBtn">
+            <img src="./img/rightControlBtn.png" alt="rightControlBtn" />
+          </button>
+        </div>
+        <div class="dateOnBtn">
+          <img src="img/dateOnBtn.png" alt="dateOnBtn" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,1234 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Comfortaa", Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main .bg {
+  max-width: 500px;
+  min-width: 340px;
+  height: 100vh;
+  max-height: 1000px;
+  margin: auto;
+  background: url("../img/bgx4.png") no-repeat top center/cover;
+  position: relative;
+}
+
+main .setting_bg {
+  max-width: 400px;
+  min-width: 360px;
+  height: 100vh;
+  max-height: 1000px;
+  margin: auto;
+  position: relative;
+}
+main .setting_bg .setting_add_bg {
+  width: 100%;
+  height: 100vh;
+  max-height: 1000px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 5px solid yellow;
+  background: #fff;
+  z-index: 1000;
+  display: none;
+}
+main .setting_bg .setting_add_bg.on {
+  display: block;
+}
+
+#index .bg {
+  position: relative;
+}
+#index .bg h1 {
+  text-align: center;
+  margin-top: 330px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#index .bg .btns {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+#index .bg .btns .whiteBtn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 310px;
+  height: 50px;
+  cursor: pointer;
+}
+#index .bg .btns .whiteBtn:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#index .bg .btns .whiteBtn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#index .bg .btns .blackBtn {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 310px;
+  height: 50px;
+  cursor: pointer;
+}
+#index .bg .btns .blackBtn:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#index .bg .btns .blackBtn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#DdayList .bg {
+  position: relative;
+}
+#DdayList .bg h1 {
+  text-align: center;
+  margin-top: 60px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#DdayList .bg .DdayList_wrap {
+  width: 100%;
+  height: 310px;
+  position: absolute;
+  bottom: 115px;
+  overflow: hidden;
+}
+#DdayList .bg .DdayList_wrap ul {
+  width: calc(100% + 17px);
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  padding: 20px 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  padding-right: 17px;
+}
+#DdayList .bg .DdayList_wrap ul li {
+  position: relative;
+}
+#DdayList .bg .DdayList_wrap ul li button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 310px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+  align-items: center;
+  font-size: 24px;
+}
+#DdayList .bg .DdayList_wrap ul li button:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#DdayList .bg .DdayList_wrap ul li button a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#DdayList .bg .DdayList_wrap ul li button a {
+  display: flex;
+  justify-content: space-between;
+}
+#DdayList .bg .DdayList_wrap ul li img {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+}
+#DdayList .bg .btns {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: center;
+}
+#DdayList .bg .btns .whiteBtn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+}
+#DdayList .bg .btns .whiteBtn:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#DdayList .bg .btns .whiteBtn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#DdayList .bg .btns .blackBtn {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+}
+#DdayList .bg .btns .blackBtn:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#DdayList .bg .btns .blackBtn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#setting .setting_bg {
+  position: relative;
+  border: 1px solid gray;
+}
+#setting .setting_bg .setting_input_wrap {
+  padding: 60px 20px 0;
+}
+#setting .setting_bg .setting_input_wrap h2 {
+  margin: 20px;
+}
+#setting .setting_bg .setting_input_wrap .setting_title input {
+  box-sizing: border-box;
+  display: block;
+  min-width: 320px;
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  text-indent: 20px;
+  margin: auto;
+}
+#setting .setting_bg .setting_input_wrap .setting_calendar .calender_selector_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#setting .setting_bg .setting_input_wrap .setting_calendar .calender_selector_wrap .calender_selector {
+  width: 150px;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  line-height: 45px;
+  padding-left: 10px;
+}
+#setting .setting_bg .setting_input_wrap .setting_calendar .calender_selector_wrap .calender_selector span {
+  transition: 0.5s;
+}
+#setting .setting_bg .setting_input_wrap .setting_calendar .calender_selector_wrap .calender_selector span.blank::after {
+  display: inline-block;
+  content: " -";
+  padding-left: 4px;
+}
+#setting .setting_bg .setting_input_wrap .setting_calendar .calender_selector_wrap .calender_selector span.downform {
+  margin-left: 5px;
+}
+#setting .setting_bg .setting_input_wrap .setting_calendar .calender_option_wrap {
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+#setting .setting_bg .setting_input_wrap .setting_calendar .calender_option_wrap .calender_option {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 150px;
+  height: 160px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  line-height: 45px;
+  padding: 5px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#setting .setting_bg .setting_input_wrap .setting_calendar .calender_option_wrap .calender_option.on {
+  display: flex;
+}
+#setting .setting_bg .setting_input_wrap .setting_calendar .calender_option_wrap .calender_option > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#setting .setting_bg .setting_input_wrap .setting_calendar .calender_option_wrap .calender_option > div input {
+  width: 40px;
+  text-align: right;
+}
+#setting .setting_bg .setting_input_wrap .setting_calendar .calender_option_wrap .calender_option > div img {
+  width: 16px;
+  height: 20px;
+  cursor: pointer;
+}
+#setting .setting_bg .setting_input_wrap .album_img {
+  max-width: 200px;
+  height: 150px;
+  margin: 30px auto 0;
+  border: 1px solid black;
+}
+#setting .setting_bg .setting_input_wrap .album_img img {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#setting .setting_bg .setting_input_wrap .img_change_button {
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+#setting .setting_bg .setting_input_wrap .img_change_button button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+#setting .setting_bg .setting_input_wrap .todoList {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+}
+#setting .setting_bg .setting_input_wrap .todoList button {
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 130px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 10px;
+  color: #666;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  position: relative;
+}
+#setting .setting_bg .setting_input_wrap .todoList button:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#setting .setting_bg .setting_input_wrap .todoList button a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#setting .setting_bg .setting_input_wrap .todoList button span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -10px;
+  right: -16px;
+  width: 33px;
+  height: 21px;
+  background: #d9d9d9;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #fff;
+}
+#setting .setting_bg .setting_input_wrap .todoList button span.on {
+  background: red;
+  border: 2px solid pink;
+  width: 38px;
+  height: 25px;
+  top: -12px;
+  right: -19px;
+}
+#setting .setting_bg .setting_input_wrap .todoList button:hover {
+  color: #000;
+  text-shadow: none;
+  border: 1px solid #aaa;
+  box-shadow: 0 0 1px 1px #aaa;
+}
+#setting .setting_bg .btns {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: center;
+}
+#setting .setting_bg .btns .whiteBtn {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+}
+#setting .setting_bg .btns .whiteBtn:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#setting .setting_bg .btns .whiteBtn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#setting .setting_bg .btns .blackBtn {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+}
+#setting .setting_bg .btns .blackBtn:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#setting .setting_bg .btns .blackBtn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#everyTodo .setting_bg {
+  border: 1px solid #ccc;
+}
+#everyTodo .setting_bg .setting_wrap {
+  padding: 60px 20px 0;
+}
+#everyTodo .setting_bg .setting_wrap .setting_calendar h2 {
+  margin: 20px;
+}
+#everyTodo .setting_bg .setting_wrap .setting_calendar .calender_selector_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#everyTodo .setting_bg .setting_wrap .setting_calendar .calender_selector_wrap .calender_selector {
+  width: 150px;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  line-height: 45px;
+  padding-left: 10px;
+}
+#everyTodo .setting_bg .setting_wrap .setting_calendar .calender_selector_wrap .calender_selector span.blank::after {
+  display: inline-block;
+  content: " -";
+  padding-left: 4px;
+}
+#everyTodo .setting_bg .setting_wrap .setting_calendar .calender_selector_wrap .calender_selector span.downform {
+  margin-left: 5px;
+}
+#everyTodo .setting_bg .setting_wrap .setting_calendar .calender_option_wrap {
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+#everyTodo .setting_bg .setting_wrap .setting_calendar .calender_option_wrap .calender_option {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 150px;
+  height: 160px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  line-height: 45px;
+  padding: 5px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#everyTodo .setting_bg .setting_wrap .setting_calendar .calender_option_wrap .calender_option.on {
+  display: flex;
+}
+#everyTodo .setting_bg .setting_wrap .setting_calendar .calender_option_wrap .calender_option > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#everyTodo .setting_bg .setting_wrap .setting_calendar .calender_option_wrap .calender_option > div input {
+  width: 40px;
+  text-align: right;
+}
+#everyTodo .setting_bg .setting_wrap .setting_calendar .calender_option_wrap .calender_option > div img {
+  width: 16px;
+  height: 20px;
+  cursor: pointer;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList {
+  margin: 20px auto 0;
+  width: 330px;
+  height: 310px;
+  background: url("../img/moonlight.jpg") center center/cover no-repeat;
+  border-radius: 10px;
+  position: relative;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap {
+  width: 100%;
+  height: 310px;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap ul {
+  width: calc(100% + 17px);
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  padding: 20px 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  padding-right: 17px;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap ul li {
+  position: relative;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap ul li.off {
+  display: none;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap ul li button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 270px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap ul li button:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap ul li button a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap ul li img {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap .dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  z-index: 300;
+  display: none;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap .dark.on {
+  display: block;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap .todoList_form {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  text-align: center;
+  display: none;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap .todoList_form.on {
+  display: block;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap .todoList_form h3 {
+  font-size: 24px;
+  margin: 40px 20px 10px;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap .todoList_form p {
+  margin: 10px 30px;
+  height: 150px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap .todoList_form .form_btns {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap .todoList_form .form_btns button {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap .todoList_form .form_btns button:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#everyTodo .setting_bg .setting_wrap .everydayList .DdayList_wrap .todoList_form .form_btns button a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#everyTodo .setting_bg .setting_wrap .addListBtn {
+  margin-top: 30px;
+  text-align: center;
+}
+#everyTodo .setting_bg .setting_wrap .addListBtn button {
+  background: #fff;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 310px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  color: #aaa;
+}
+#everyTodo .setting_bg .setting_wrap .addListBtn button:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#everyTodo .setting_bg .setting_wrap .addListBtn button a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#everyTodo .setting_bg .setting_wrap .addListBtn button:hover {
+  background: #ccc;
+}
+#everyTodo .setting_bg .setting_add_bg .setting_add_wrap {
+  padding: 60px 20px 0;
+}
+#everyTodo .setting_bg .setting_add_bg .setting_add_wrap h2 {
+  margin: 20px;
+}
+#everyTodo .setting_bg .setting_add_bg .setting_add_wrap .userTitle {
+  width: 300px;
+  height: 40px;
+  margin: auto;
+  background: #ccc;
+}
+#everyTodo .setting_bg .setting_add_bg .setting_add_wrap .userTitle input {
+  line-height: 40px;
+  font-size: 24px;
+  text-indent: 20px;
+}
+#everyTodo .setting_bg .setting_add_bg .setting_add_wrap .userparagraph {
+  width: 300px;
+  min-height: 260px;
+  max-height: 300px;
+  margin: auto;
+  background: #ccc;
+  padding: 20px;
+  overflow-y: auto;
+}
+#everyTodo .setting_bg .setting_add_bg .setting_add_wrap .userparagraph .textarea {
+  min-height: 260px;
+  font-size: 20px;
+  line-height: 28px;
+}
+#everyTodo .setting_bg .btns {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: center;
+}
+#everyTodo .setting_bg .btns .whiteBtn {
+  background: #ccc;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 230px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 3px #aaa;
+  border: none;
+}
+#everyTodo .setting_bg .btns .whiteBtn:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#everyTodo .setting_bg .btns .whiteBtn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#everyTodo .setting_bg .btns .whiteBtn:hover {
+  box-shadow: none;
+}
+#everyTodo .setting_bg .btns .blackBtn {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 270px;
+  height: 50px;
+  cursor: pointer;
+}
+#everyTodo .setting_bg .btns .blackBtn:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#everyTodo .setting_bg .btns .blackBtn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#todoList .bg {
+  position: relative;
+}
+#todoList .bg h1 {
+  text-align: center;
+  margin-top: 60px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#todoList .bg .DdayCount {
+  text-align: center;
+  margin-top: 120px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  color: #fff;
+  font-size: 68px;
+  line-height: 76px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+#todoList .bg h2 {
+  text-align: center;
+  margin-top: 200px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+#todoList .bg .todayList_wrap {
+  width: 100%;
+  min-height: 310px;
+  position: absolute;
+  top: 280px;
+  overflow: hidden;
+}
+@media (max-height: 680px) {
+  #todoList .bg .todayList_wrap {
+    min-height: 280px;
+  }
+}
+#todoList .bg .todayList_wrap .Percentage {
+  width: 310px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+#todoList .bg .todayList_wrap .Percentage span {
+  z-index: 10;
+}
+#todoList .bg .todayList_wrap .Percentage .Percentage_bg_color {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background: rgba(159, 249, 255, 0.9);
+}
+#todoList .bg .todayList_wrap .Percentage.on {
+  display: none;
+}
+#todoList .bg .todayList_wrap .completBtns {
+  display: flex;
+  justify-content: space-between;
+  width: 310px;
+  margin: auto;
+}
+#todoList .bg .todayList_wrap .completBtns.on {
+  display: none;
+}
+#todoList .bg .todayList_wrap .completBtns button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 90px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#todoList .bg .todayList_wrap .completBtns button:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#todoList .bg .todayList_wrap .completBtns button a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#todoList .bg .todayList_wrap .todoLists.on {
+  display: none;
+}
+#todoList .bg .todayList_wrap .todoLists ul {
+  width: calc(100% + 17px);
+  height: 100%;
+  max-height: 250px;
+  padding: 20px 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  padding-right: 17px;
+}
+@media (max-height: 730px) {
+  #todoList .bg .todayList_wrap .todoLists ul {
+    max-height: 200px;
+  }
+}
+@media (max-height: 680px) {
+  #todoList .bg .todayList_wrap .todoLists ul {
+    max-height: 150px;
+  }
+}
+#todoList .bg .todayList_wrap .todoLists ul li {
+  position: relative;
+}
+#todoList .bg .todayList_wrap .todoLists ul li button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 310px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+#todoList .bg .todayList_wrap .todoLists ul li button:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#todoList .bg .todayList_wrap .todoLists ul li button a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#todoList .bg .todayList_wrap .todoLists .All.on {
+  display: none;
+}
+#todoList .bg .todayList_wrap .todoLists .before.on {
+  display: none;
+}
+#todoList .bg .todayList_wrap .todoLists .after.on {
+  display: none;
+}
+#todoList .bg .todayList_wrap .forms .dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 300;
+  display: none;
+}
+#todoList .bg .todayList_wrap .forms .dark.on {
+  display: block;
+}
+#todoList .bg .todayList_wrap .forms .todoList_form {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  text-align: center;
+  display: none;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+#todoList .bg .todayList_wrap .forms .todoList_form.on {
+  display: block;
+}
+#todoList .bg .todayList_wrap .forms .todoList_form h3 {
+  font-size: 20x;
+  margin: 40px 20px 10px;
+}
+#todoList .bg .todayList_wrap .forms .todoList_form p {
+  margin: 10px 30px;
+  height: 150px;
+  text-align: left;
+}
+#todoList .bg .todayList_wrap .forms .todoList_form .form_btns {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+#todoList .bg .todayList_wrap .forms .todoList_form .form_btns button {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+#todoList .bg .todayList_wrap .forms .todoList_form .form_btns button:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#todoList .bg .todayList_wrap .forms .todoList_form .form_btns button a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#todoList .bg .todayList_wrap .forms .todoList_complet_form {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  text-align: center;
+  display: none;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+#todoList .bg .todayList_wrap .forms .todoList_complet_form.on {
+  display: block;
+}
+#todoList .bg .todayList_wrap .forms .todoList_complet_form h3 {
+  font-size: 24px;
+  margin: 40px 20px 10px;
+}
+#todoList .bg .todayList_wrap .forms .todoList_complet_form p {
+  margin: 10px 30px;
+  height: 120px;
+  text-align: left;
+}
+#todoList .bg .todayList_wrap .forms .todoList_complet_form div {
+  position: relative;
+  top: -50px;
+  font-size: 46px;
+  font-weight: bold;
+  color: orangered;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+#todoList .bg .todayList_wrap .forms .todoList_complet_form .form_btns {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+#todoList .bg .todayList_wrap .forms .todoList_complet_form .form_btns button {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 250px;
+  height: auto;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+#todoList .bg .todayList_wrap .forms .todoList_complet_form .form_btns button:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#todoList .bg .todayList_wrap .forms .todoList_complet_form .form_btns button a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#todoList .bg .btns {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: center;
+}
+#todoList .bg .btns .whiteBtn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+}
+#todoList .bg .btns .whiteBtn:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#todoList .bg .btns .whiteBtn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#todoList .bg .btns .blackBtn {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+}
+#todoList .bg .btns .blackBtn:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  box-shadow: 0 0 5px 3px #fff;
+}
+#todoList .bg .btns .blackBtn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.goBack {
+  position: absolute;
+  width: 22px;
+  height: 28px;
+  left: 13px;
+  top: 35px;
+  cursor: pointer;
+}
+
+.dateControl {
+  position: absolute;
+  width: 150px;
+  height: 28px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 35px;
+  display: flex;
+  margin-top: -100px;
+  justify-content: space-between;
+  transition: 0.5s;
+  cursor: default;
+}
+.dateControl div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0px 0px 2px #bbd9f6;
+}
+.dateControl div span {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  text-shadow: 0px 0px 2px #bbd9f6;
+}
+.dateControl button {
+  cursor: pointer;
+}
+.dateControl.white_bg div span {
+  color: #9298c7;
+  text-shadow: 0px 0px 2px #47a6ff;
+}
+.dateControl.on {
+  display: flex;
+  margin-top: 0px;
+}
+
+.dateOnBtn {
+  position: absolute;
+  width: 22px;
+  height: 28px;
+  right: 23px;
+  top: 35px;
+  cursor: pointer;
+}/*# sourceMappingURL=basic.css.map */

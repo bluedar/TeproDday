@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>목표설정-매일할일</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/basic.css" />
+    <script src="js/prefixfree.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/everyTodo.js"></script>
+  </head>
+  <body>
+    <main id="everyTodo">
+      <div class="setting_bg">
+        <div class="setting_wrap">
+          <div class="setting_calendar">
+            <h2>매일할일</h2>
+            <div class="calender_selector_wrap">
+              <div class="calender_selector selector_before">
+                <span class="year blank"></span>
+                <span class="month blank"></span>
+                <span class="day"></span>
+              </div>
+              <div class="calender_selector selector_after">
+                <span class="year blank"></span>
+                <span class="month blank"></span>
+                <span class="day"></span>
+              </div>
+            </div>
+          </div>
+          <div class="everydayList">
+            <div class="DdayList_wrap">
+              <ul class="todo_list_wrap"></ul>
+              <div class="dark"></div>
+              <div class="todoList_form">
+                <h3>코딩 100줄 작성하기</h3>
+                <p>코딩을 100줄 작성하고 사진을 업로드한다.</p>
+                <div class="form_btns">
+                  <button class="modify_button">수정</button>
+                  <button class="delite_button">삭제</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="addListBtn">
+            <button>리스트 작성</button>
+          </div>
+        </div>
+        <!-- 폼으로 나타날 리스트제작 부분 Start-->
+        <div class="setting_add_bg">
+          <div class="setting_add_wrap">
+            <h2>매일할일</h2>
+            <div class="userTitle">
+              <input type="text" placeholder="ex 코딩공부" />
+            </div>
+            <h2>매일할일 상세내용</h2>
+            <div class="userparagraph">
+              <div contenteditable="true" class="textarea"></div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="blackBtn formCloseBtn">취소</button>
+            <button class="blackBtn FormOkBtn">확인</button>
+          </div>
+        </div>
+        <!-- 폼으로 나타날 리스트 제작 부분 End -->
+        <div class="btns">
+          <button class="whiteBtn completBtn">
+            <a href="./setting.html">작성완료</a>
+          </button>
+        </div>
+        <div class="goBack">
+          <img src="img/backBtn.png" alt="goBack" />
+        </div>
+        <div class="dateControl white_bg">
+          <button class="leftControlBtn">
+            <img src="./img/leftControlBtn.png" alt="leftControlBtn" />
+          </button>
+          <div>
+            <span class="year">2023</span>-<span class="month">06</span>-<span
+              class="day"
+              >18</span
+            >
+          </div>
+          <button class="rightControlBtn">
+            <img src="./img/rightControlBtn.png" alt="rightControlBtn" />
+          </button>
+        </div>
+        <div class="dateOnBtn" style="display: none">
+          <img src="img/dateOnBtn.png" alt="dateOnBtn" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
