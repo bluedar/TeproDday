@@ -1,0 +1,22 @@
+{
+  "short_name": "pwaDday",
+  "name": "PWA Dday",
+  "background_color": "#00ffff",
+  "icons": [
+    {
+      "src": "img/tp_logo_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/tp_logo_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "thema_color": "#00ffff",
+  "orientation": "Portrait",
+  "description": "Dday PWA프로젝트 페이지입니다."
+}

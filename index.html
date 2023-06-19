@@ -4,12 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>로그인</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/basic.css" />
     <script src="js/prefixfree.min.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/index.js"></script>
+    <link rel="shortcut icon" href="img/icon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        //서비스워커가 있을때 (서비스워커 지원여부)
+        navigator.serviceWorker
+          .register("./service-worker.js")
+          .then((success) => {
+            console.log("seviceWorker 설치에 성공했습니다!", success);
+          })
+          .catch((error) => {
+            console.log("seviceWorker 설치에 실패했습니다!", error);
+          });
+      }
+    </script>
   </head>
   <body>
     <main id="index">
@@ -20,6 +36,26 @@
             <a href="./DdayList.html">로그인</a>
           </button>
           <button class="blackBtn">회원가입</button>
+        </div>
+        <div class="goBack" style="display: none">
+          <img src="img/backBtn.png" alt="goBack" />
+        </div>
+        <div class="dateOnBtn" style="display: none">
+          <img src="img/dateOnBtn.png" alt="dateOnBtn" />
+        </div>
+        <div class="dateControl" style="display: none">
+          <button class="leftControlBtn">
+            <img src="./img/leftControlBtn.png" alt="leftControlBtn" />
+          </button>
+          <div>
+            <span class="year">2023</span>-<span class="month">06</span>-<span
+              class="day"
+              >18</span
+            >
+          </div>
+          <button class="rightControlBtn">
+            <img src="./img/rightControlBtn.png" alt="rightControlBtn" />
+          </button>
         </div>
       </div>
     </main>
