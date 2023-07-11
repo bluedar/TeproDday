@@ -419,6 +419,11 @@ main .setting_bg .setting_add_bg.on {
        column-gap: 20px;
   justify-content: center;
 }
+@media (max-height: 600px) {
+  #setting .setting_bg .btns {
+    display: none;
+  }
+}
 #setting .setting_bg .btns .whiteBtn {
   background: rgba(0, 0, 0, 0.2);
   border: 2px solid #ffffff;
@@ -750,6 +755,11 @@ main .setting_bg .setting_add_bg.on {
   -moz-column-gap: 20px;
        column-gap: 20px;
   justify-content: center;
+}
+@media (max-height: 600px) {
+  #everyTodo .setting_bg .btns {
+    display: none;
+  }
 }
 #everyTodo .setting_bg .btns .whiteBtn {
   background: #ccc;

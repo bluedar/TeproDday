@@ -223,6 +223,9 @@
       display: flex;
       column-gap: 20px;
       justify-content: center;
+      @media (max-height: 600px) {
+        display: none;
+      }
 
       .whiteBtn {
         @include Transparent-btn(#ccc, 230px, 60px);
